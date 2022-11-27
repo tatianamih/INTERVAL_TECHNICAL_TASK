@@ -15,12 +15,26 @@ import javax.validation.constraints.NotNull;
 public class BookCreateDto implements BaseDto {
     @JsonIgnore
     Long id;
+
+    @NotBlank
     String title;
+
+    @NotNull
     Integer pageNumber;
+
+    @NotNull
     Integer publicationYear;
+
+    @NotNull
     Integer printedEditionNumber;
+
+    @NotNull
     Long publishingHouseId;
+
+    @NotNull
     Long authorId;
+
+    @NotNull
     Long genreId;
 }
 
