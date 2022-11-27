@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="11" author="Tatiana Mikhalchenko">
+    <comment>Genres</comment>
+    <insert tableName="genres">
+      <column name="name" value="ADVENTURES"/>
+    </insert>
+      <insert tableName="genres">
+      <column name="name" value="ROMAN"/>
+    </insert>
+
+    <insert tableName="genres">
+      <column name="name" value="FANTASTIC"/>
+    </insert>
+    <insert tableName="genres">
+      <column name="name" value="SCIENTIFIC"/>
+    </insert>
+
+    <insert tableName="genres">
+      <column name="name" value="TECHNICAL"/>
+    </insert>
+
+    <insert tableName="genres">
+      <column name="name" value="FASHION"/>
+    </insert>
+  </changeSet>
+</databaseChangeLog>

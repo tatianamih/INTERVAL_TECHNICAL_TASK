@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="5" author="Tatiana Mikhalchenko">
+        <createTable tableName="magazines"
+                     remarks="A magazine to contain all the magazines">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="issue_number" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="page_number" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="publication_year" type="VARCHAR(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="printed_edition_number" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="genre_id" type="bigint">
+                <constraints foreignKeyName="genre_magazine_id" references="genres(id)"/>
+            </column>
+            <column name="author_id" type="bigint">
+                <constraints foreignKeyName="author_magazine_id" references="authors(id)"/>
+            </column>
+            <column name="publishing_house_id" type="bigint">
+                <constraints foreignKeyName="publishing_house_magazine_id" references="publishing_houses(id)"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

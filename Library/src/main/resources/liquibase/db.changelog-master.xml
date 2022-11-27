@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="0" author="Tatiana Mikhalchenko">
+        <tagDatabase tag="db_init"/>
+    </changeSet>
+
+    <include file="classpath:liquibase/tables/create-genres-table.xml"/>
+    <include file="classpath:liquibase/tables/create-cities-table.xml"/>
+    <include file="classpath:liquibase/tables/create-authors-table.xml"/>
+    <include file="classpath:liquibase/tables/create-publishing-houses-table.xml"/>
+    <include file="classpath:liquibase/tables/create-books-table.xml"/>
+    <include file="classpath:liquibase/tables/create-magazines-table.xml"/>
+    <include file="classpath:liquibase/tables/create-newspapers-table.xml"/>
+
+    <include file="classpath:liquibase/insert/insert-data-authors.xml"/>
+    <include file="classpath:liquibase/insert/insert-data-cities.xml"/>
+    <include file="classpath:liquibase/insert/insert-data-publishing-houses.xml"/>
+    <include file="classpath:liquibase/insert/insert-data-genres.xml"/>
+    <include file="classpath:liquibase/insert/insert-data-books.xml"/>
+    <include file="classpath:liquibase/insert/insert-data-magazines.xml"/>
+    <include file="classpath:liquibase/insert/insert-data-newspapers.xml"/>
+
+    <!--<include file="classpath:liquibase/insert/insert-data-printed_editions.xml"/>-->
+
+    <changeSet id="1" author="Tatiana Mikhalchenko">
+        <tagDatabase tag="v.1.0.0"/>
+    </changeSet>
+</databaseChangeLog>

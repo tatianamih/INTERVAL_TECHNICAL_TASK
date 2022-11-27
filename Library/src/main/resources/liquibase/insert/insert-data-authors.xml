@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="8" author="Tatiana Mikhalchenko">
+    <comment>Publishing houses</comment>
+    <insert tableName="authors">
+      <column name="name" value="Margaret Mitchel"/>
+    </insert>
+      <insert tableName="authors">
+      <column name="name" value="Derek Strange"/>
+    </insert>
+
+    <insert tableName="authors">
+      <column name="name" value="Antoine De Saint-Exupery"/>
+    </insert>
+    <insert tableName="authors">
+      <column name="name" value="Rudyard Kipling"/>
+    </insert>
+
+    <insert tableName="authors">
+      <column name="name" value="Victor Ivanov"/>
+    </insert>
+
+    <insert tableName="authors">
+      <column name="name" value="Oleg Petrov"/>
+    </insert>
+
+  </changeSet>
+</databaseChangeLog>

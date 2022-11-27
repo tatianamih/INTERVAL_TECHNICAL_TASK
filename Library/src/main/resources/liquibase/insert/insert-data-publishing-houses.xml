@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="12" author="Tatiana Mikhalchenko">
+    <comment>Publishing houses</comment>
+    <insert tableName="publishing_houses">
+      <column name="name" value="book house"/>
+      <column name="city_id" value="01"/>
+    </insert>
+
+    <insert tableName="publishing_houses">
+      <column name="name" value="my news"/>
+      <column name="city_id" value="02"/>
+    </insert>
+
+    <insert tableName="publishing_houses">
+      <column name="name" value="your magazine"/>
+      <column name="city_id" value="03"/>
+    </insert>
+
+    <insert tableName="publishing_houses">
+      <column name="name" value="interest_book"/>
+      <column name="city_id" value="04"/>
+    </insert>
+
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="014" author="Tatiana Mikhalchenko">
+    <comment>Printed Editions</comment>
+    <insert tableName="books">
+      <column name="title" value="Gone with the wind"/>
+      <column name="page_number" value="300"/>
+      <column name="publication_year" value="2020"/>
+      <column name="printed_edition_number" value="20"/>
+      <column name="genre_id" value="01"/>
+      <column name="author_id" value="01"/>
+      <column name="publishing_house_id" value="01"/>
+    </insert>
+    <insert tableName="books">
+      <column name="title" value="Girl meets boy"/>
+      <column name="page_number" value="158"/>
+      <column name="publication_year" value="2020"/>
+      <column name="printed_edition_number" value="15"/>
+      <column name="genre_id" value="01"/>
+      <column name="author_id" value="01"/>
+      <column name="publishing_house_id" value="01"/>
+    </insert>
+    <insert tableName="books">
+      <column name="title" value="The little prince"/>
+      <column name="page_number" value="100"/>
+      <column name="publication_year" value="2021"/>
+      <column name="printed_edition_number" value="10"/>
+      <column name="genre_id" value="01"/>
+      <column name="author_id" value="03"/>
+      <column name="publishing_house_id" value="03"/>
+    </insert>
+    <insert tableName="books">
+      <column name="title" value="The gungle book"/>
+      <column name="page_number" value="300"/>
+      <column name="publication_year" value="2021"/>
+      <column name="printed_edition_number" value="4"/>
+      <column name="genre_id" value="02"/>
+      <column name="author_id" value="04"/>
+      <column name="publishing_house_id" value="03"/>
+    </insert>
+  </changeSet>
+</databaseChangeLog>

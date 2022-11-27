@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="15" author="Tatiana Mikhalchenko">
+    <comment>Printed Editions</comment>
+    <insert tableName="magazines">
+      <column name="title" value="Fashion word"/>
+      <column name="issue_number" value="188"/>
+      <column name="page_number" value="15"/>
+      <column name="publication_year" value="2022"/>
+      <column name="printed_edition_number" value="20"/>
+      <column name="genre_id" value="06"/>
+      <column name="author_id" value="05"/>
+      <column name="publishing_house_id" value="03"/>
+    </insert>
+    <insert tableName="magazines">
+      <column name="title" value="All about car"/>
+      <column name="issue_number" value="189"/>
+      <column name="page_number" value="15"/>
+      <column name="publication_year" value="2022"/>
+      <column name="printed_edition_number" value="20"/>
+      <column name="genre_id" value="05"/>
+      <column name="author_id" value="06"/>
+      <column name="publishing_house_id" value="03"/>
+    </insert>
+  </changeSet>
+</databaseChangeLog>
